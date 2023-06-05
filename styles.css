@@ -1,25 +1,37 @@
-body {
+/* body {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+} */
+.whole {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5%;
 }
+
+h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+}
+
 
 .header {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    width: 400px;
     justify-content: space-around;
     margin-bottom: 20px;
+    gap: 2rem;
 }
 
 .footer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    width: 500px;
     align-items: center;
+    gap: 2rem;
     margin-top: 20px;
 }
 
@@ -30,4 +42,18 @@ body {
     height: 500px;
     display: grid;
     border: 1px solid black;
+    transition: all ease-in-out 500ms;
+    -webkit-box-shadow: -1px 1px 5px 9px rgba(112, 110, 110, 0.25);
+    -moz-box-shadow: -1px 1px 5px 9px rgba(157, 151, 151, 0.25);
+    box-shadow: -1px 1px 5px 9px rgba(130, 129, 129, 0.25);
+}
+
+.board:hover {
+    -webkit-box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.25);
+    -moz-box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.25);
+    box-shadow: -1px 1px 5px 9px rgba(0,0,0,0.25);
+}
+
+#message, #draw {
+    text-align: center;
 }

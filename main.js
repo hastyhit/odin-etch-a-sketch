@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
         let size = getSize();
         createBoard(size);
     })
-    console.log("Hi"); 
+
 })
 
 function createBoard(size) {
